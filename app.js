@@ -27,6 +27,9 @@ app.set('view engine', 'jade');
 
 app.use(logger('dev'));
 app.use(cors({ origin: "http://localhost:4000", credentials: true }));
+app.listen(4000, () => {
+  console.log("실행중");
+});
 
 app.use(express.json());
 app.use(bodyparser.urlencoded({ extended: false }));
