@@ -26,7 +26,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
-app.use(cors({ origin: "http://127.0.0.1", credentials: true }));
+app.use(cors());
 
 app.use(express.json());
 app.use(bodyparser.urlencoded({ extended: false }));
